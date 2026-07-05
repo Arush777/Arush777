@@ -159,47 +159,8 @@ These repositories are implementation-first study projects. They are intentional
 | Frontend | Next.js, React, TypeScript, JavaScript |
 | Research Workflow | notebooks, reproducible experiments, metric reporting, artifact release |
 
----
 
-## How I Think About AI Projects
 
-```text
-1. Start with the user problem, not the model.
-2. Build the smallest working pipeline that can be tested end to end.
-3. Add retrieval, memory, tooling, or agents only when they create measurable leverage.
-4. Make outputs inspectable: confidence, evidence, logs, metrics, and failure modes.
-5. Write the README so another person can understand what was built and why it matters.
-```
-
-I care about systems that are impressive in demos but also understandable after the demo ends.
-
----
-
-## Selected Project Evidence
-
-| Project | Evidence Signal |
-|---|---|
-| [ReVival](https://github.com/Arush777/ReVival) | 7-agent AWS Bedrock pipeline, live demo, backend ownership, sustainability/product impact |
-| [DeepLense](https://github.com/Arush777/Deeplense_GSoC) | scientific ML, PyTorch baselines, ROC-AUC evaluation, public model artifacts |
-| [mellea-IBM](https://github.com/Arush777/mellea-IBM) | IBM/Mellea workspace, testable LLM workflows, agent and evaluator patterns |
-| [AtomMail](https://github.com/Arush777/my-hackfest-atom-mail) | Hackfest 2nd prize, RAG + OCR + personalized LLM response generation |
-| [DPO Alignment](https://github.com/Arush777/High-Performance-Language-Model-Alignment-via-Direct-Preference-Optimization) | preference optimization, QLoRA, LoRA, modular training pipeline |
-
----
-
-## GitHub Activity
-
-<div align="center">
-
-![Arush's GitHub stats](https://github-readme-stats.vercel.app/api?username=Arush777&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github)
-
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Arush777&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub streak](https://streak-stats.demolab.com?user=Arush777&theme=tokyonight&hide_border=true)
-
-</div>
-
----
 
 ## Open To
 
