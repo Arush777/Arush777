@@ -173,7 +173,7 @@ These repositories are implementation-first study projects. They are intentional
 
 <div align="center">
 
-### If the repo has a model, it should have metrics. If it has agents, it should have traces. If it has a demo, it should have a reason to exist.
+
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:020617,35:0F766E,70:1D4ED8,100:020617&height=120&section=footer)
 
