@@ -17,10 +17,10 @@ school   : final-year ECE, IIT (ISM) Dhanbad
 based    : New Delhi, IST
 open to  : research engineering roles from mid-2027,
            internships before then
+arush@dhanbad:~$ cat highlights.txt
 ```
 
 ```diff
-arush@dhanbad:~$ cat highlights.txt
 + 1.35×       faster decoding on a 30B diffusion LM
 + 1st         Best Paper, IBM Research 2026
 + 5th/80,000  Amazon ML Challenge 2026, public leaderboard
@@ -109,15 +109,14 @@ Aug 2026–now  Conscious Engines   1.35× decoding, 30B diffusion LM
 May–Aug 2026  IBM Research India  Best Paper Award, AI for quantum
 Jun 2025–now  IIT (ISM) Dhanbad   PACL + BrainRMA, under review
 Jun–Nov 2025  Aeroqube            MedGemma 4B on AWS with RAG
-```
-
-```diff
 arush@dhanbad:~$ git show HEAD
     draft-aligned decoding for SDAR-30B-A3B, a 30B-parameter
     diffusion mixture-of-experts LM: a 1.7B drafter pre-fills
     each 32-token block, a self-distilled LoRA judge accepts
     or re-masks each token
+```
 
+```diff
 @@ vs the 30B model's own block decoding @@
 - 12.8   large-model passes per block
 +  7.6   large-model passes per block, 1.68× fewer
@@ -152,20 +151,23 @@ Agentic AI Intern. Fine-tuned MedGemma 4B for a medical-tourism assistant and de
 arush@dhanbad:~$ ls projects/
 ```
 
-| project | what | result |
-| :-- | :-- | :-- |
-| [PriorityKV](https://github.com/Arush777/Priority_KV) | Structure-aware KV-cache eviction for long agent traces | **112/120** vs 1/120 |
-| [Business entity resolution](https://github.com/NoviceCoderInfinity/clauders) | Amazon ML Challenge 2026: cost-tiered cascade over 1.7M business records | **5th** of 80,000 |
-| [AlignmentLab](https://github.com/Arush777/AlignmentLab) | Matched-compute SFT, DPO and GRPO/RLVR on Qwen3-8B and 14B: does RLVR add capability, or only sharpen sampling? | post-training |
-| [Arista Intelligent RRM](https://github.com/HappySaxena/Arista_High_Prep_InterIIT_14.0) | Inter IIT Tech Meet 14.0: learns Wi-Fi channel, power and bandwidth with a GNN and offline RL; edge-client throughput +18% | **12th** of 23 IITs |
-| [ReVival](https://github.com/Arush777/ReVival) | Seven agents grade returned products from photos or video; I built the FastAPI backend | Amazon HackOn S6 |
-| [Hindi TinyStories GPT](https://github.com/Arush777/hindi-tinystories-gpt) | Decoder-only transformer (RoPE, RMSNorm, SwiGLU) from scratch, ~100M Hindi tokens | **33M** params |
-| [AtomMail](https://github.com/Arush777/my-hackfest-atom-mail) | Email assistant that reads threads and attachments via OCR and drafts replies in the user's tone | **2nd** prize, Hackfest |
-| [DeepLense](https://github.com/Arush777/Deeplense_GSoC) | Physics-informed gravitational-lens classification, weights on Hugging Face | **0.9976** ROC-AUC |
-| [Stanford CS336](https://github.com/Arush777/Language_Modeling-stanford-cs336) | Tokenizers, transformers and training loops implemented from the ground up | from scratch |
+| project | what |
+| :-- | :-- |
+| [PriorityKV](https://github.com/Arush777/Priority_KV) | Structure-aware KV-cache eviction for long agent traces: task state kept in **112/120** cases vs 1/120 |
+| [Business entity resolution](https://github.com/NoviceCoderInfinity/clauders) | Amazon ML Challenge 2026, **5th of 80,000**: a cost-tiered cascade over 1.7M business records |
+| [AlignmentLab](https://github.com/Arush777/AlignmentLab) | Matched-compute SFT, DPO and GRPO/RLVR on Qwen3-8B and 14B: does RLVR add capability, or only sharpen sampling? |
+| [Arista Intelligent RRM](https://github.com/HappySaxena/Arista_High_Prep_InterIIT_14.0) | Inter IIT Tech Meet 14.0, **12th of 23 IITs**: learns Wi-Fi channel, power and bandwidth with a GNN and offline RL; edge-client throughput **+18%** |
+| [ReVival](https://github.com/Arush777/ReVival) | Amazon HackOn S6: seven agents grade returned products from photos or video; I built the FastAPI backend |
+| [Hindi TinyStories GPT](https://github.com/Arush777/hindi-tinystories-gpt) | **33M**-parameter decoder-only transformer (RoPE, RMSNorm, SwiGLU) written from scratch, trained on ~100M Hindi tokens |
+| [AtomMail](https://github.com/Arush777/my-hackfest-atom-mail) | **2nd prize**, Hackfest: email assistant that reads threads and attachments via OCR and drafts replies in the user's tone |
+| [DeepLense](https://github.com/Arush777/Deeplense_GSoC) | Physics-informed gravitational-lens classification, **0.9976** ROC-AUC, weights public on Hugging Face |
+| [Stanford CS336](https://github.com/Arush777/Language_Modeling-stanford-cs336) | Tokenizers, transformers and training loops implemented from the ground up |
+
+```console
+arush@dhanbad:~$ diff -u position-blind/ priority-kv/
+```
 
 ```diff
-arush@dhanbad:~$ diff -u position-blind/ priority-kv/
 @@ 15,360 generations · Qwen3-8B and Llama-3.1-8B @@
   protects system, tool-schema, constraint, sink and recent tokens
 - position-blind eviction   task state kept    1/120
